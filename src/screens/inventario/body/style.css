@@ -1,0 +1,255 @@
+.container_body {
+    display: flex;
+    background:#fff;
+    width: 100%;
+    height:auto;
+    align-items: flex-start;
+    justify-content: center;
+    
+  }
+    
+  .container1{
+      
+    background: #fff;
+    width: 20%;
+    height: 90%;
+  }
+  .container2{
+    
+    background:#fff;
+    width: 90%;
+    height: 90%;
+  }
+
+  
+ 
+/*Inventario*/
+.inventory-container, .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .formulario{
+    background-color: #e1306c;
+    height: '150px';
+    width:'150px' ;
+  }
+  /* Títulos */
+  /* h2, h3 {
+    color: #028376;
+    margin-top: 30px; /* Espacio antes del título 
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    color: #028376 !important;
+    font-size: 3.0em;
+} */
+
+  textarea, select, button {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px);
+  }
+  
+  /* Botón principal */
+  button {
+    background-color: #028376;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #19e8ca;
+  }
+  
+  /* Contenedor de la tabla */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  /* Tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* Encabezado de la tabla */
+  th {
+    background-color: #19e8ca;
+    color: rgb(18, 15, 15);
+  }
+  
+  /* Filas pares */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos del modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 8px;
+  }
+  
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Contenedor de notificaciones */
+  .notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #5cb85c; 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+  }
+
+
+
+  /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  input {
+    margin: 10px;
+  }
+  
+  .button_añadir {
+    border-radius: 8px;
+    border: 1px solid #ddfced; /* Color del borde visible todo el tiempo */
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #ddfced; /* Fondo visible siempre */
+    color: #1a1a1a; /* Color del texto */
+    cursor: pointer;
+    transition: ba
+  }
+  
+  .button_añadir:hover {
+    background-color: #19e886;
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #notificationContainer {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    display: none;
+  }
+  
+  .button_cancelar {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 40px;
+    width: auto; /* Ajusta el ancho al contenido */
+    text-align: center; /* Centra el texto */
+    display: block; /* Cambia a bloque para asegurar que el texto se centre */
+    margin-left: auto; /* Centra el botón en su contenedor */
+    margin-right: auto;
+
+}
+
+.button_cancelar:hover {
+  background-color: red; 
+}
+
+th:nth-child(9), td:nth-child(9) {
+  width: 150px; /* Ajusta este valor según el ancho que necesites */
+ }
+  

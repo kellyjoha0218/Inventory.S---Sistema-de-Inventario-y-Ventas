@@ -1,0 +1,271 @@
+ 
+ .boby-container {
+  display: flex;
+  background:#fff;
+  width: 100%;
+  height:auto;
+  align-items: flex-start;
+  justify-content: center;
+  
+}
+  
+.container1{
+    
+  background: #fff;
+  width: 20%;
+  height: 90%;
+}
+.container2{
+  
+  background:#fff;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+ 
+
+
+
+  /** --------------------------------
+   -- Sidebar
+  -------------------------------- */
+  .sidebar {
+    background-color: var(--sidebar-bg-color);
+    width: var(--sidebar-width);
+    transition: all .3s ease-in-out;
+    transform: translateX(0);
+    z-index: 9999999;
+  height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar .close-aside {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+    color: #EEE;
+}
+
+.sidebar .sidebar-header {
+    border-bottom: 1px solid #2a2b3c
+}
+
+.sidebar .sidebar-header h5 a {
+    color: var(--dk-gray-300)
+}
+
+.sidebar .sidebar-header p {
+    color: var(--dk-gray-400);
+    font-size: .825rem;
+}
+
+.sidebar .search .form-control ~ i {
+    color: #2b2f3a;
+    right: 40px;
+    top: 22px;
+}
+
+.sidebar > ul > li {
+    padding: .7rem 1.75rem;
+}
+
+.sidebar ul > li > a {
+    color: var(--dk-gray-400);
+    text-decoration: none;
+}
+
+/* Start numbers */
+.sidebar ul > li > a > .num {
+    line-height: 0;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 0px 5px
+}
+
+.sidebar ul > li > i {
+    font-size: 18px;
+    margin-right: .7rem;
+    color: var(--dk-gray-500);
+}
+
+.sidebar ul > li.has-dropdown > a:after {
+    content: '\eb3a';
+    font-family: unicons-line;
+    font-size: 1rem;
+    line-height: 1.8;
+    float: right;
+    color: var(--dk-gray-500);
+    transition: all .3s ease-in-out;
+}
+
+.sidebar ul .opened > a:after {
+    transform: rotate(-90deg);
+}
+
+
+  /** --------------------------------
+   -- welcome
+  -------------------------------- */
+  .welcome {
+    color: var(--dk-gray-300);
+  text-align: center
+}
+
+.welcome .content {
+    background-color: transparent; 
+}
+.welcome h1 {
+  font-size: 2.5rem; /* Tamaño de fuente más grande */
+}
+
+.welcome p {
+    color: var(--dk-gray-400);
+  font-size: 1.25rem;
+}
+
+.statistics .box i {
+  font-size: 40px; /* Tamaño del icono */
+  color: #003432; /* Color del icono */
+  border-radius: 40%; /* Forma redondeada */
+  background-color: #f8f9fa; /* Color de fondo */
+  padding: 5px; /* Espaciado interno */
+}
+
+
+.padding {
+  padding-bottom: 10px; /* Ajusta el espacio debajo del padding */
+}
+
+
+/** --------------------------------
+ -- Statistics
+-------------------------------- */
+.statistics {
+	color: var(--dk-gray-200);
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 800px;
+}
+
+.statistics .row {
+   margin-left: 0; /* Asegura que no haya margen izquierdo */
+  margin-right: 0; /* Permite que las columnas se envuelvan si no hay suficiente espacio */
+}
+
+.statistics .box {
+	background-color: var(--dk-dark-bg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  margin-bottom: 20px;
+  flex: 100%;
+
+}
+
+.statistics .box i {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+  margin-right: 10px;
+}
+
+.statistics .box p {
+	color: var(--dk-gray-400);
+}
+.statistics .box .ms-3 {
+  margin-left: 10px; 
+}
+
+.statistics .box .ms-3 h3 {
+  margin-right: 5px; 
+}
+.statistics .box .ms-3 h3 {
+  margin-right: 5px; 
+  font-size: 24px; 
+}
+
+.statistics .box .ms-3 span {
+  font-size: 18px; 
+}
+.col-12 {
+  --dk-dark-bg:  #c6fff3;
+  }
+
+
+  /*contener 2*/
+
+
+  .buttons-wrapper {
+    text-align: center; /* Centra todo el contenido dentro del wrapper */
+    margin-top: 100px; /* Espacio entre los grupos de botones */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Alinea los botones en el centro */
+    gap: 80px; /* Ajusta el espacio entre los botones */
+    margin-bottom: 40px; /* Espacio debajo de cada fila de botones */
+}
+
+.buttons a.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 2px solid #fff; /* Color del borde */
+    transition: all 0.3s ease; /* Transición para efectos de hover */
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+/* Hover y otros estilos */
+
+
+.animated h2 {
+  text-align: center;
+  color: #0d0c0c;
+  font-size: 2.5em;
+  margin: 10px 0; 
+}
+
+.animated p {
+  text-align: center;
+  color: #0d0c0c;
+  font-size: 1.5em;
+  margin: 10px 0; 
+}
+
+.imagenes {
+  width: 100px;
+  height: auto; 
+}
+
+
+.wow.fadeInUp.animated {
+  margin-top: 30px; /* Ajusta el valor según necesites */
+}
+ 

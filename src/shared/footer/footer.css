@@ -1,0 +1,64 @@
+
+footer {
+    background-color: #007364;
+    color: #fff;
+    padding: 30px 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+   position: relative;
+  top: 20px; /* Baja el footer 20px *
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el body llene toda la altura de la ventana */
+  margin: 0;
+}
+
+footer .columna3 {
+  text-align: right
+  
+}
+
+footer .col {
+  margin-bottom: 15px; /* Agregar espacio entre las columnas */
+}
+
+footer .columna3 h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+footer .columna3 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .columna3 ul li {
+    margin-bottom: 10px;
+    font-size: 0.9rem; /* Letra más pequeña */
+    line-height: 1.5;
+}
+
+
+
+footer .columna3 ul li a:hover {
+    color: #fff;
+}
+footer .derechos {
+  font-size: 1rem; /* Tamaño de fuente más grande */
+  line-height: 1.5; /* Aumenta el espacio entre líneas */
+  letter-spacing: -0.02em; /* Reduce ligeramente el espacio entre letras */
+  margin: 10px 0; /* Espacio arriba y abajo */
+}
+
+
+h5.mt-2 {
+  font-size: 1.25rem; /* Ajusta este valor según tus necesidades */
+}
+
+.columna3 {
+  text-align: right; /* Alinea el contenido a la derecha */
+}
