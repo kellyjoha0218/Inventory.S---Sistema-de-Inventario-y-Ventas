@@ -1,8 +1,12 @@
 import express from 'express';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Obtener el directorio actual
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Servir los archivos estáticos generados por Vite
 app.use(express.static(path.join(__dirname, 'dist')));
