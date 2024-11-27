@@ -1,12 +1,17 @@
-const express = require('express');
-const path = require('path');
+import express from 'express';
+import path from 'path';
 
 const app = express();
-const PORT = process.env.PORT || 3000; // Aquí se define el puerto
+const port = process.env.PORT || 3000;
 
-// Configurar la carpeta pública (por ejemplo, si usas Vite o React)
+// Servir los archivos estáticos generados por Vite
 app.use(express.static(path.join(__dirname, 'dist')));
 
-app.listen(PORT, '0.0.0.0', () => { // Asegúrate de que escucha en 0.0.0.0
-  console.log(`Servidor corriendo en http://0.0.0.0:${PORT}`);
+// Servir el archivo index.html para todas las rutas
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
