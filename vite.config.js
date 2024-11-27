@@ -1,12 +1,10 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-// https://vitejs.dev/config/
 export default defineConfig({
+  plugins: [react()],
   server: {
-    host: '0.0.0.0',   // Asegúrate de usar 0.0.0.0
-    port: process.env.PORT || 3000, // Usar el puerto adecuado
+    host: '0.0.0.0',  // Permitir conexiones externas
+    port: 3000,       // Solo para desarrollo local
+  },
+  build: {
+    outDir: 'dist',    // Directorio de salida para los archivos construidos
   },
 });
-
-

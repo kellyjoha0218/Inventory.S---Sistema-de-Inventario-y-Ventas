@@ -1,19 +1,12 @@
-import express from 'express';
-const app = express()
+const express = require('express');
+const path = require('path');
 
-// Define una ruta para servir los archivos estáticos del frontend
+const app = express();
+const PORT = process.env.PORT || 3000; // Aquí se define el puerto
+
+// Configurar la carpeta pública (por ejemplo, si usas Vite o React)
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// Ruta para cualquier otra solicitud que no sea un archivo estático
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+app.listen(PORT, '0.0.0.0', () => { // Asegúrate de que escucha en 0.0.0.0
+  console.log(`Servidor corriendo en http://0.0.0.0:${PORT}`);
 });
-
-// Configura el puerto usando `process.env.PORT` (necesario para Render)
-const port = process.env.PORT || 3000;
-
-// Inicia el servidor en `0.0.0.0`
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Servidor corriendo en el puerto ${port}`);
-});
-
